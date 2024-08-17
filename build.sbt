@@ -104,6 +104,9 @@ lazy val root = tlCrossRootProject
     unidocs,
     bench,
     binCompatTest
+  ).settings(
+    name := "cats",
+    moduleName := "cats-root"
   )
 
 lazy val kernel = crossProject(JSPlatform, JVMPlatform, NativePlatform)
